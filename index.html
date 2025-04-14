@@ -288,6 +288,16 @@
   </section>
 
   <script>
+ // Toggle menu mobile
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+
+
+    
     const slides = Array.from(document.querySelectorAll('.slide'));
     const slogan = document.getElementById('slogan');
     let currentIndex = 0;
