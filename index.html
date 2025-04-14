@@ -288,18 +288,15 @@
   </section>
 
   <script>
- // Toggle menu mobile
-    const toggle = document.getElementById('menu-toggle');
-    const navLinks = document.getElementById('nav-links');
-    toggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
+ // Toggle per menu mobile
+ document.getElementById('menu-toggle').addEventListener('click', () => {
+      document.getElementById('nav-links').classList.toggle('active');
     });
 
-    // Gestione menu mobile
+// Gestione menu mobile
 document.getElementById('menu-toggle').addEventListener('click', () => {
     document.getElementById('nav-links').classList.toggle('active');
   });
-
 
     
     const slides = Array.from(document.querySelectorAll('.slide'));
@@ -353,4 +350,5 @@ document.getElementById('menu-toggle').addEventListener('click', () => {
       showSloganThenSlides(); // slogan iniziale
     });
   </script>
-  
+</body>
+</html>
